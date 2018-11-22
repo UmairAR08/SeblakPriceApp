@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:orientation="vertical"
+        tools:context="com.example.android.justjava.MainActivity">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/caudex"
+            android:hint="Masukan nama anda"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Seblak_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Seblak"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/Sayuran_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Sayuran"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caudex"
+            android:text="TAMBAH"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <CheckBox
+            android:id="@+id/Telur_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Telur"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/Mie_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Mie"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/Bakso_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Bakso"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/Sosis_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Sosis"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/Makaroni_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Makaroni"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/Ceker_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Ceker"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/Keju_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Keju"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="jumlah"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/black"
+
+                android:onClick="increment"
+                android:text="+"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/quantity_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="#212121"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/black"
+
+                android:onClick="decrement"
+                android:text="-"
+                android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Harga"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/price_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caudex"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/black"
+            android:fontFamily="@font/caudex"
+            android:onClick="Submitorder"
+            android:text="Order"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</ScrollView>
